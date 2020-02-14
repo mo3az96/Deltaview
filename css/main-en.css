@@ -476,7 +476,7 @@ html {
 }
 
 .project .details:after {
-    content: "";
+    content: "\e876";
     font-family: "Linearicons-Free";
     font-size: 15px;
     color: #fff;
@@ -783,6 +783,7 @@ header {
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    z-index: 9999;
 }
 
 @media (max-width: 767px) {
@@ -1617,7 +1618,7 @@ header {
 }
 
 .blog-body .readmore:after {
-    content: "";
+    content: "\e876";
     font-family: "Linearicons-Free";
     font-size: 14px;
     color: #999999;
@@ -1658,7 +1659,7 @@ header {
 }
 
 .gallery-cont .readmore:after {
-    content: "";
+    content: "\e876";
     font-family: "Linearicons-Free";
     font-size: 14px;
     color: #999999;

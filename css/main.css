@@ -678,6 +678,7 @@ header {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  z-index: 9999;
 }
 @media (max-width: 767px) {
   header {
@@ -1633,7 +1634,7 @@ a.foot-nav-link:focus {
   left: 0;
   right: 0;
   background-color: rgba(4, 22, 89, 0.7);
-  z-index: 9;
+  z-index: 99999;
   display: none;
 }
 
