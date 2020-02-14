@@ -1,0 +1,98 @@
+.menu-opner,
+.close-btn {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+
+    @include xs {
+        display: flex;
+    }
+}
+
+.xs-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($blue, 0.7);
+    z-index: 9;
+    display: none;
+}
+
+.sec-head {
+    @include xs {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 280px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #fff;
+        transform-origin: right;
+        transform: scaleX(0);
+        @include transition(all 0.5s ease-in-out);
+
+        &.nav-open {
+            transform: scaleX(1);
+        }
+
+        .close-btn {
+            display: flex;
+            color: $footer;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 20px;
+        }
+
+        .mo-navbar {
+            flex-direction: column;
+            margin: 80px 25px;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .lang-cont {
+            position: absolute;
+            right: 25px;
+            top: 23px;
+        }
+
+        .selected-lang {
+            display: none;
+        }
+
+        .other-lang {
+            visibility: visible;
+            opacity: 1;
+            position: relative;
+            left: auto;
+            top: auto;
+            padding: 0;
+            width: 23px;
+
+            .lang {
+
+                &.fixall {
+                    .lang-text {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .nav-li {
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        .nav-anchor {
+            color: $blue;
+        }
+    }
+}

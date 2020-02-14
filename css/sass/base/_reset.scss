@@ -1,0 +1,23 @@
+body {
+    position: relative;
+    font-family: sst;
+
+    &::-webkit-scrollbar {
+        background-color: rgba(#3e59c3, 0.5);
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #349846;
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #349846 rgba(#3e59c3, 0.5);
+}
+
+.overflow {
+    overflow: hidden !important;
+}

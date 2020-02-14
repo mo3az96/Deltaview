@@ -1,0 +1,108 @@
+.call-req {
+    position: fixed;
+    background-color: rgba($green, 0.902);
+    width: 200px;
+    height: 200px;
+    bottom: 00;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    @include transition(all 0.3s ease-in-out);
+
+    .after {
+        direction: ltr;
+        transform: rotate(-45deg) translate(-5px, 33px);
+        display: flex;
+        font-size: 30px;
+        color: rgba(#fff, 0.5);
+
+        &:after {
+            content: ")";
+            color: rgba(#fff, 0.2);
+        }
+
+        &:before {
+            content: ")";
+            color: rgba(#fff, 1);
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: $green;
+
+        .lnr {
+            animation: tada 0.5s linear;
+        }
+    }
+
+    .lnr {
+        font-size: 48px;
+    }
+
+    @include sm {
+        width: 75px;
+        height: 75px;
+
+        .fixid-text {
+            display: none;
+        }
+
+        .after {
+            display: none;
+        }
+
+        .lnr {
+            font-size: 40px;
+        }
+    }
+}
+
+.scroll-top {
+    position: fixed;
+    background-color: rgba($green, 0.902);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 150px;
+    right: 250px;
+    z-index: 6;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+    cursor: pointer;
+
+    &:hover {
+        background-color: $blue;
+    }
+
+    &:focus {
+        background-color: $green;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+
+    @include sm {
+        right: auto;
+        left: 25px;
+        bottom: 15px;
+    }
+}
+
+.show-scroll {
+    display: flex;
+}

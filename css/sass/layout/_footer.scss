@@ -1,0 +1,106 @@
+footer {
+    background-color: $blue;
+    padding-top: 68px;
+    padding-bottom: 65px;
+
+    @include xs {
+        padding: 50px 0;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include xs {
+        flex-direction: column;
+    }
+}
+
+.foot-nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include xs {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.foot-nav-ico {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 17px;
+}
+
+.foot-nav-links-header {
+    font-size: 18px;
+    color: #fff;
+    font-family: bold;
+    margin-bottom: 20px;
+}
+
+.foot-nav-links-desc {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.foot-nav-link {
+    color: $footer;
+    font-size: 16px;
+    line-height: 1.5;
+
+
+}
+
+a.foot-nav-link {
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $green;
+    }
+
+    &:focus {
+        color: $green;
+    }
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 39px;
+        height: 39px;
+        color: #fff;
+        border-radius: 50%;
+        background-color: #1e2e6a;
+        font-size: 18px;
+        @include transition(all 0.3s ease-in-out);
+        margin: 0 6px;
+
+        &:hover {
+            background-color: $green;
+        }
+    }
+}
+
+.coptright {
+
+    height: 84px;
+    background-color: $blue;
+    border-top: 1px solid rgba(#fff, 0.102);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $footer;
+    font-size: 15px;
+    text-align: center;
+}

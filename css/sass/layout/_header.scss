@@ -1,0 +1,146 @@
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0 10px;
+    z-index: 5;
+    @include transition(all 0.3s ease-in-out);
+
+    @include xs {
+        padding: 10px 0;
+    }
+}
+
+.logo {
+    @include transition(all 0.3s ease-in-out);
+
+    @include sm {
+        width: 80px;
+    }
+
+    @include xs {
+        width: 50px;
+    }
+
+    img {
+        @include transition(all 0.3s ease-in-out);
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-head {
+    display: flex;
+    align-items: center;
+}
+
+.lang-cont {
+    position: relative;
+    line-height: 2;
+
+    &:hover {
+        .other-lang {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover,
+    &:focus {
+        color: $green;
+    }
+
+    &.fixall {
+        .lang-text {
+            margin-left: 0;
+        }
+    }
+}
+
+.selected-lang {
+    .lang {
+        &:after {
+            content: "";
+            font-family: "Linearicons-Free";
+            font-size: 8px;
+            margin-right: 4px;
+        }
+    }
+
+    cursor: pointer;
+}
+
+.other-lang {
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    top: 100%;
+    left: -5px;
+    right: 0;
+    padding: 5px 0;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(all 0.3s ease-in-out);
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        display: block;
+        border-width: 6px;
+        border-color: transparent transparent #ffffff;
+        border-style: solid;
+        top: -12px;
+        position: absolute;
+        right: 5px;
+    }
+
+    .lang {
+        color: $blue;
+
+        &:hover {
+            color: $green;
+        }
+
+        &.fixall {
+            .lang-text {
+                margin-left: 0;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.lang-text {
+    font-size: 18px;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+
+.fixed-header {
+    background-color: $blue;
+    padding-top: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+    .logo {
+        width: 75px;
+
+        @include xs {
+            width: 40px;
+        }
+    }
+}
