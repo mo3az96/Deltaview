@@ -92,9 +92,10 @@ header {
     top: 100%;
     left: -5px;
     right: 0;
-    padding: 5px 0;
+    padding: 7px 5px;
     visibility: hidden;
     opacity: 0;
+    border-radius: 2px;
     @include transition(all 0.3s ease-in-out);
 
     &:before {

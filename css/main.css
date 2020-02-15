@@ -205,7 +205,7 @@ html {
 }
 .main-slider-sec .swiper-container.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: transparent;
-  font-size: 1.24vw;
+  font-size: 24px;
   color: rgba(255, 255, 255, 0.502);
   opacity: 1;
   width: auto;
@@ -272,7 +272,7 @@ html {
 }
 
 .slide-info-head {
-  font-size: 3.1vw;
+  font-size: 60px;
   font-family: bold;
   color: #fff;
   margin-bottom: 10px;
@@ -284,7 +284,7 @@ html {
 }
 
 .slide-info-desc {
-  font-size: 2.48vw;
+  font-size: 48px;
   font-family: light;
   color: #fff;
 }
@@ -563,7 +563,7 @@ html {
 }
 
 .call-req {
-  position: fixed;
+  position: absolute;
   background-color: rgba(52, 152, 70, 0.902);
   width: 200px;
   height: 200px;
@@ -763,9 +763,10 @@ header {
   top: 100%;
   left: -5px;
   right: 0;
-  padding: 5px 0;
+  padding: 7px 5px;
   visibility: hidden;
   opacity: 0;
+  border-radius: 2px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -825,8 +826,8 @@ header {
   z-index: 2;
 }
 .slider-see-all .all-slider-projects {
-  font-size: 1.24vw;
-  color: #fff;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
   font-family: light;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -862,7 +863,7 @@ header {
 }
 .slider-social .social {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 1.24vw;
+  font-size: 24px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -991,11 +992,14 @@ header {
   padding: 0 6%;
 }
 .about-sec .about-head {
-  font-size: 2.48vw;
+  font-size: 48px;
   color: #fff;
   font-family: bold;
-  margin-top: 1.25vw;
-  margin-bottom: 2.5vw;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .about-sec .about-head {
@@ -1006,11 +1010,10 @@ header {
   }
 }
 .about-sec .about-body {
-  font-size: 1.033vw;
+  font-size: 20px;
   color: #fff;
   font-family: light;
   text-align: justify;
-  line-height: 1.8;
 }
 @media (max-width: 767px) {
   .about-sec .about-body {
@@ -1020,7 +1023,7 @@ header {
   }
 }
 .about-sec .about-link {
-  font-size: 1.033vw;
+  font-size: 16px;
   color: #3e59c3;
   font-family: light;
   text-decoration: underline;
@@ -1041,7 +1044,7 @@ header {
 .about-sec .about-numbers {
   display: flex;
   align-items: center;
-  margin-top: 2.5vw;
+  margin-top: 25px;
 }
 @media (max-width: 767px) {
   .about-sec .about-numbers {
@@ -1054,11 +1057,11 @@ header {
   flex-direction: column;
   align-items: flex-start;
   color: #fff;
-  font-size: 0.93vw;
-  margin-left: 5.58vw;
+  font-size: 18px;
+  margin-left: 100px;
 }
 .about-sec .number span {
-  font-size: 3.72vw;
+  font-size: 72px;
   color: #349846;
   font-family: bold;
 }
