@@ -948,7 +948,7 @@ header {
 
 .slider-see-all .all-slider-projects {
     font-size: 24px;
-    color: rgba(#fff, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-family: light;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -1210,7 +1210,7 @@ header {
     align-items: flex-start;
     color: #fff;
     font-size: 18px;
-    margin-right: 100px;
+    margin-right: 75px;
 }
 
 .about-sec .number span {
