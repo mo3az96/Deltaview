@@ -61,7 +61,7 @@
     text-align: justify;
 
     @include xs {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -129,7 +129,7 @@
     z-index: 9;
 
     @include md {
-        padding: 50px 0;
+        padding: 0 0;
 
 
     }
