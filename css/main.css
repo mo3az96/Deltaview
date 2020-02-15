@@ -583,7 +583,6 @@ html {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  display: none;
 }
 .call-req .after {
   direction: ltr;
@@ -665,7 +664,7 @@ html {
 }
 
 .show-scroll {
-  display: none;
+  display: flex;
 }
 
 header {

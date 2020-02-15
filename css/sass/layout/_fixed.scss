@@ -15,7 +15,7 @@
     text-align: center;
     padding: 0 20px;
     @include transition(all 0.3s ease-in-out);
-    display: none;
+    // display: none;
 
     .after {
         direction: ltr;
@@ -105,5 +105,5 @@
 }
 
 .show-scroll {
-    display: none;
+    display: flex;
 }
