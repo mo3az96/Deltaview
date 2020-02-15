@@ -117,4 +117,14 @@ $(document).ready(function () {
             },
         });
     }
+
+    $(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        if ($(this).scrollTop() >= 0) {
+            $('.breadcrumb-sec').css('background-position-y', scrollVal + 'px');
+        } else {
+            $('.breadcrumb-sec').css('background-position-y', '0');
+        }
+
+    });
 });
