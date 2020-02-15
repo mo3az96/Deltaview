@@ -98,7 +98,6 @@
 body {
   position: relative;
   font-family: sst;
-  height: 5000px;
 }
 body::-webkit-scrollbar {
   background-color: rgba(62, 89, 195, 0.5);
