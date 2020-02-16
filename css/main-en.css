@@ -872,7 +872,7 @@ header {
 
 .other-lang {
     position: absolute;
-    background-color: #0d1c61;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     top: 100%;
@@ -899,7 +899,7 @@ header {
     height: 0;
     display: block;
     border-width: 6px;
-    border-color: transparent transparent #0d1c61;
+    border-color: transparent transparent #fff;
     border-style: solid;
     top: -12px;
     position: absolute;
@@ -908,11 +908,11 @@ header {
 }
 
 .other-lang .lang {
-    color: rgba(255, 255, 255, 0.6);
+    color: #0d1c61;
 }
 
 .other-lang .lang:hover {
-    color: #fff;
+    color: #349846;
 }
 
 .other-lang .lang.fixall .lang-text {
