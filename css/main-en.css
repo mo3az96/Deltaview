@@ -1918,6 +1918,7 @@ a.foot-nav-link:focus {
         top: auto;
         padding: 0;
         width: 23px;
+        transform: none;
     }
 
     .sec-head .other-lang .lang.fixall .lang-text {
